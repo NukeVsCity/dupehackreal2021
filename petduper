@@ -1,0 +1,20 @@
+if(game.PlaceId == 6284583030) then
+function dupe(id)
+local ohTable1 = {
+    [1] = {
+        [1] = id
+    }
+}
+game.workspace.__THINGS.__REMOTES["delete several pets"]:InvokeServer(ohTable1)
+end
+function dupeall()
+    for i,pet in pairs(game.Players.LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets:getChildren()) do
+        if(pet:isA("TextButton")) then
+          --  if(pet.Equipped.Visible ~= true) then
+                dupe(pet.name)
+         --  end
+        end
+    end
+end
+dupeall()
+end
