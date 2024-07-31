@@ -1187,7 +1187,7 @@ end
             end
             return false
         elseif DataPath == "Pity" then
-            return (Player.PlayerGui:WaitForChild("HUD").Main.Frames:WaitForChild("Store").SkinChances1.TextLabel)
+            return 123
         end
     end
 
